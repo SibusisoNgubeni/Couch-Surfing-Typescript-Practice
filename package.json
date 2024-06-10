@@ -1,13 +1,19 @@
 {
   "name": "project",
-  "dependencies": {},
   "devDependencies": {
-    "webpack": "^2.0",
-    "ts-loader": "*",
-    "typescript": "*"
+    "ts-loader": "^9.5.1",
+    "typescript": "*",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
   },
   "scripts": {
     "build": "webpack",
     "watch": "webpack -w"
-  }
+  },
+  "version": "1.0.0",
+  "description": "## Challenge Overview",
+  "main": "webpack.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
