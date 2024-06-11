@@ -5,19 +5,28 @@
 
 const propertyContainer = document.querySelector('.properties')
 import { showReviewTotal, populateUser } from './utils'
-import { Permissions , LoyaltyUser } from '.src/Enums'
+import { Permissions , LoyaltyUser } from './Enums'
 const footer = document.querySelector('.footer')
 
 
 let isOpen: boolean
 
 // Reviews
-const reviews : { 
-    name: string; 
-    stars: number; 
-    loyaltyUser: LoyaltyUser;  
-    date: string
-    }[] = [
+const reviews : (
+    {
+    name: string;
+    stars: number;
+    loyaltyUser: LoyaltyUser;
+    date: string;   
+} |
+{
+    name: string;
+    stars: number;
+    loyaltyUser: LoyaltyUser;
+    date: string;
+    description: string;
+}
+)[]= [
     {
         name: 'Sheia',
         stars: 5,
@@ -119,7 +128,7 @@ showReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser)
 
 populateUser(you.isReturning, you.firstName)
 
-// Adding the properties
+// Add the properties
 for (let i = 0; i < properties.length; i++) {
     const card = document.createElement('div')
     card.classList.add('card')
