@@ -3,6 +3,8 @@
 // all TypeScript weakness flags.
 // : number
 
+const propertyContainer = document.querySelector('.properties')
+
 import { showReviewTotal, populateUser } from './utils'
 let isOpen: boolean
 
@@ -48,7 +50,7 @@ const you: {
     stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
 }
 
-//Properties
+// Array of Properties
 const properties : {
     image: string;
     title: string;
@@ -59,46 +61,68 @@ const properties : {
         code: number;
         country: string;
     };
-    contact: string;
+
+    //contact was made into a Tuple type
+    //A tuple is a collection of values that can be of different types, such as numbers, strings, booleans, and other types.
+    contact: [number, string];
     isAvailable: boolean;
+
 }[] = [
     {
-        image: '',
-        title: 'Colombian Shack',
-        price: 45,
+        image: 'images/cashan1.jpg',
+        title: '2 story',
+        price: 90,
         location: {
-            firstLine: 'shack 37',
-            city: 'Bogota',
+            firstLine: 'house 37',
+            city: 'Rustenburg',
             code: 45632,
-            country: 'Colombia'
+            country: 'South africa'
         },
-        contact: 'marywinkle@gmail.com',
+        contact: [+1123495082908, 'marywinkle@gmail.com'],
         isAvailable: true  
     },
     {
-        image: '',
-        title: 'Polish Cottage',
-        price: 34,
+        image: 'images/cashan2.jpg',
+        title: 'cashan villa',
+        price: 101,
         location: {
-            firstLine: 'no 23',
-            city: 'Gdansk',
+            firstLine: 'house 23',
+            city: 'ibiza',
             code: 343903,
-            country: 'Poland'
+            country: 'spain'
         },
-        contact: 'garydavis@hotmail.com',
+        contact: [+1123495082908, 'garydavis@hotmail.com'],
         isAvailable: false 
     },
     {
-        image: '',
-        title: 'London Flat',
+        image: 'images/cashan3jpg',
+        title: 'cashan Flat',
         price: 23,
         location: {
             firstLine: 'flat 15',
-            city: 'London',
+            city: 'cairo',
             code: 35433,
-            country: 'United Kingdom',
+            country: 'Egypt',
         },
-        contact: 'andyluger@aol.com',
+        contact: [ +1123495082908, 'andyluger@aol.com'],
         isAvailable: true
     }
 ]
+
+
+// Functions
+showReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser)
+
+populateUser(you.isReturning, you.firstName)
+
+// Add the properties
+for (let i = 0; i < properties.length; i++) {
+    const card = document.createElement('div')
+    card.classList.add('card')
+    card.innerHTML = properties[i].title
+    const image = document.createElement('img')
+    image.setAttribute('src', properties[i].image)
+    card.appendChild(image)
+    propertyContainer.appendChild(card)
+}
+
