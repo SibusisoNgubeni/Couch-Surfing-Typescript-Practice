@@ -1,13 +1,41 @@
-# DJS09: Couch Surfing | Typescript Practice
+# Couch Surfing | Typescript Practice
 
-## Challenge Overview
+## Overview
 
-Are you ready to get stuck into some Typescript? For this challenge, you are required to code along with the lecturer from this lesson:  Couch Surfing Website
+This project is an implementation of the Couch Surfing Website. The focus was on understanding TypeScript fundamentals and applying them to build a functional web application. The project follows best practices in TypeScript development, ensuring type safety, maintainability, and scalability.
 
-For this challenge you are required to code along with the lecturer from this lesson: Learn Typescript Tutorial
+## Project Features
 
-The focus for this project will be to understand the concepts around a JavaScript superset like Typescript and to get a feel for how it works. You will need to submit the finished Couch Surfing Website as your DJS09 Submission. 
+Implemented using TypeScript to enhance code quality and reduce runtime errors.
 
-**🚨 Note: You will need to make GitHub commits to your project after each lesson in the Scrimba walkthrough, showing that you have followed along with the lessons.**
+Built a functional Couch Surfing Website following the Scrimba tutorial.
 
-Make sure to submit your project on the LMS Project Tab [DJS09] 
+Applied TypeScript concepts such as interfaces, types, generics, and strict typing.
+
+Used modern JavaScript and TypeScript best practices.
+
+Fully responsive and interactive UI.
+
+## Technologies Used
+
+TypeScript: JavaScript superset for static type checking.
+
+HTML & CSS: Structuring and styling the web pages.
+
+JavaScript (ES6+): Enhancing interactivity.
+
+Git & GitHub: Version control and project management.
+
+## Key Learnings
+
+Understanding TypeScript syntax and features.
+
+Applying strict typing to JavaScript for better code reliability.
+
+Working with interfaces, types, and generics.
+
+Strengthening problem-solving skills in front-end development.
+
+## Project Completion
+
+This project was completed by following along with the Scrimba tutorial series. 
